@@ -10,7 +10,7 @@ local count = 0
 job = CronJob("1/10 * * * * *", function()
 	print("I get executed every 10s!")
 
-    count = count + 1
+    	count = count + 1
 	if count > 3 then
 		print("Removed after 30s!")
 		job:Remove()
